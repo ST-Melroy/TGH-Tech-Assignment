@@ -5,15 +5,23 @@
   margin: 0;
   box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
+text-decoration: none;
  
 }
 .HomePage{
 
   width: 100vw;
   height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(94, 42, 178, 1), rgba(22, 30, 108, 1));
   display: flex;
   flex-direction: column;
+}
+
+.BookMakedPage{
+
+   background: linear-gradient(rgba(94, 42, 178, 1), rgba(22, 30, 108, 1));
+   min-height: 100vh;
 }
 
 .NavigationBar{
@@ -33,6 +41,8 @@ font-family: 'Poppins', sans-serif;
 .NavigationBar h4{
   margin-left: 10px;
   font-weight: 300;
+  text-decoration: none;
+  color: white;
   cursor: pointer;
   font-size: 20px;
 }
@@ -58,7 +68,7 @@ font-family: 'Poppins', sans-serif;
 .QuoteDisplay{
   background: #D05252;
   width: 773px;
-  height: 263px;
+  height: 293px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -67,18 +77,20 @@ font-family: 'Poppins', sans-serif;
   border-radius: 30px;
 }
 .Message_display{
-  width: 521px;
-  height: 91px;
+  width: 581px;
+  height: 181px;
   display: flex;
   justify-content: center;
   font-size: 28px;
+  padding: 3px;
   font-weight: 400;
 }
 
 .AuthorDisplay{
   display: flex;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 80px;
+  margin-bottom: 10px;
  
 }
 .BookMark{
@@ -108,7 +120,7 @@ font-family: 'Poppins', sans-serif;
 }
 .DropDown_Containner select{
   width: 200px;
-  padding: 3px;
+  padding: 8px;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -122,3 +134,199 @@ font-family: 'Poppins', sans-serif;
   border-radius: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.BookMark_Containner{
+
+
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.BookMark_Scroll_Container{
+
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.BookMarkedComponent{
+  width: 850px;
+  background: rgba(208, 82, 82, 1);
+  border-radius: 30px;
+  display: flex;
+  padding: 10px;
+  height: 288px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Content{
+ width: 521px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+
+  font-size: 26px;
+  color: white;
+  font-weight: 400;
+}
+
+.AuthorComponent{
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+.Delete_option{
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.Delete_option button{
+  padding: 7px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.Delete_option button:hover{
+  opacity: 0.7;
+}
+
+
+ @media screen and (min-width: 600px) and (max-width: 900px){
+
+    .Quotes_Containner{
+
+     
+     
+      width: 700px;
+    }
+    .QuoteDisplay{
+      max-width: 590px;
+      height: 260px;
+    }
+    .Message_display{
+      width: 490px;
+      font-size: 22px;
+      height: 130px;
+      padding: 10px;
+    }
+    .BookMark_Scroll_Container{
+
+       
+        width: 100%;
+    }
+    .BookMarkedComponent{
+
+        width: 500px;
+    }
+    .Content{
+        width: 100%;
+        padding: 13px;
+    }
+    .Content p{
+      font-size: 22px;
+    }
+}
+
+ @media screen and (min-width: 340px) and (max-width: 600px){
+
+    .QuoteDisplay{
+      max-width: 340px;
+      height: 230px;
+      min-width: 410px;
+      
+    }
+     .Message_display{
+      width: 100%;
+      font-size: 16px;
+      padding: 13px;
+      flex-wrap: wrap;
+    }
+    .AuthorName{
+
+      font-size: 15px;
+    }
+    .DropDown_Containner button{
+
+      font-size: 20px;
+    }
+     .BookMarkedComponent{
+
+        width: 350px;
+        height: 240px;
+    }
+    .Content{
+        width: 100%;
+        padding: 17px;
+    }
+    .Content p ,.AuthorComponent{
+      font-size: 15px;
+    }
+    .Delete_option button{
+
+      font-size: 13px;
+      padding: 4px;
+    }
+
+ }
+
+ @media screen and (max-width: 360px){
+    .QuoteDisplay{
+
+      width: 310px;
+      display: flex;
+      justify-content: center;
+      height: 250px;
+    }
+    .Message_display{
+      width: 100%;
+      font-size: 13px;
+     padding: 13px;
+      flex-wrap: wrap;
+    }
+   
+     .AuthorName{
+
+      font-size: 11px;
+    }
+    .BookMark{
+        width: 100px;
+    }
+     .DropDown_Containner button{
+
+      font-size: 16px;
+    }
+    .BookMarkedComponent{
+
+        width: 320px;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Content{
+        width: 100%;
+        padding: 22px;
+    }
+    .Content p ,.AuthorComponent{
+      font-size: 15px;
+    }
+    .Delete_option button{
+
+      font-size: 13px;
+      padding: 4px;
+    }
+ }

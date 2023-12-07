@@ -5,7 +5,7 @@ const QuotesComponent = () => {
   return (
       <div className='Quotes_Containner'>
           
-          <QuotesDisplay/>
+      <QuotesDisplay />
     </div>
   )
 }
